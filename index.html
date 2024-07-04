@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Grupları</title>
+    <title>Hacı Hasan Camii Yaz Kuran Kursu</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="website icon" href="cami.jpg" type="image/x-icon">
     <style>
@@ -15,16 +14,18 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            display: flex; /* Flexbox kullanarak içeriği hizalamak için */
-            justify-content: center; /* İçeriği yatayda ortalamak için */
+            display: flex;
+            justify-content: center;
             align-items: center;
             height: 100vh;
         }
 
         .container {
-            display: flex; /* İçerik ve fotoğraf alanını yan yana hizalamak için */
-            align-items: flex-start; /* İçeriği yatayda üstten başlatmak için */
-            width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
@@ -33,26 +34,36 @@
         }
 
         .content {
-            flex: 1; /* İçeriğin esnek boyutlandırması */
+            width: 100%;
         }
 
         .photo {
             height: 200px;
             width: 200px;
-            margin-left: 285px; /* İçerikten sağda 20px boşluk */
-            border-radius: 8px; /* Köşeleri yuvarlamak */
-            overflow: hidden; /* Taşma durumlarında gizleme */
+            margin: 0 auto 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         .photo img {
-            width: 100%; /* Fotoğrafın tam genişlikte görünmesi */
-            height: auto; /* Oranları koruyarak yükseklik ayarı */
-            display: block; /* Kenar boşluklarını kaldırmak */
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
         }
 
         h1 {
-            text-align: center;
-            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            border-top: 1px solid;
+            padding-top: 10px;
+            margin-top: 10px;
         }
 
         ul {
@@ -60,15 +71,14 @@
             padding: 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            gap: 10px;
         }
 
         ul li {
-            margin-bottom: 10px;
             border: 1px solid #007bff;
             border-radius: 8px;
             padding: 10px;
             text-align: center;
-            margin: 10px;
         }
 
         a {
@@ -79,6 +89,22 @@
         a:hover {
             text-decoration: none;
         }
+
+        @media (max-width: 768px) {
+            ul {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -87,7 +113,8 @@
             <div class="photo">
                 <img src="/cami.jpg" alt="HHC">
             </div>
-            <h1>HHC Yaz Kuran Kursu | WhatsApp Grupları</h1>
+            <h1>HHC Yaz Kuran Kursu</h1>
+            <h2>WhatsApp Grupları</h2>
             <ul>
                 <li><a href="https://chat.whatsapp.com/Lh9tAeIOTTxIkYoMTlBk7g">Grup A ( FERİT HOCA )</a></li>
                 <li><a href="https://chat.whatsapp.com/HpMXuepgxF003tppCCIQ6D">Grup B ( ÖZGÜR HOCA )</a></li>
