@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp Grupları</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         /* Genel stil ayarları */
         body {
@@ -14,12 +16,14 @@
             padding: 0;
             display: flex; /* Flexbox kullanarak içeriği hizalamak için */
             justify-content: center; /* İçeriği yatayda ortalamak için */
+            align-items: center;
+            height: 100vh;
         }
 
         .container {
             display: flex; /* İçerik ve fotoğraf alanını yan yana hizalamak için */
             align-items: flex-start; /* İçeriği yatayda üstten başlatmak için */
-            max-width: 800px;
+            width: 800px;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
@@ -32,8 +36,9 @@
         }
 
         .photo {
-            flex: 0 0 200px; /* Fotoğraf alanının sabit 200px genişliği */
-            margin-left: 20px; /* İçerikten sağda 20px boşluk */
+            height: 200px;
+            width: 200px;
+            margin-left: 285px; /* İçerikten sağda 20px boşluk */
             border-radius: 8px; /* Köşeleri yuvarlamak */
             overflow: hidden; /* Taşma durumlarında gizleme */
         }
@@ -52,10 +57,17 @@
         ul {
             list-style-type: none;
             padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
 
         ul li {
             margin-bottom: 10px;
+            border: 1px solid #007bff;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
         }
 
         a {
@@ -64,16 +76,19 @@
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="content">
-            <h1>WhatsApp Grupları</h1>
+            <div class="photo">
+                <img src="/cami.jpg" alt="HHC">
+            </div>
+            <h1>HHC Yaz Kuran Kursu | WhatsApp Grupları</h1>
             <ul>
-               <li><a href="https://chat.whatsapp.com/Lh9tAeIOTTxIkYoMTlBk7g">Grup A ( FERİT HOCA )</a></li>
+                <li><a href="https://chat.whatsapp.com/Lh9tAeIOTTxIkYoMTlBk7g">Grup A ( FERİT HOCA )</a></li>
                 <li><a href="https://chat.whatsapp.com/HpMXuepgxF003tppCCIQ6D">Grup B ( ÖZGÜR HOCA )</a></li>
                 <li><a href="#">Grup C (ASIM HOCA )</a></li>
                 <li><a href="https://chat.whatsapp.com/JvJTUMCp5MJLGYwniGlo5d">Grup D ( FATİH HOCA )</a></li>
@@ -82,9 +97,6 @@
                 <li><a href="https://chat.whatsapp.com/EFdc0N9Xdfh1GE5cw78KBn">Grup G ( MERTCAN HOCA )</a></li>
                 <li><a href="https://chat.whatsapp.com/EAxcphBML2LDcDBGAU0tSt">Grup H ( ABDULKADİR HOCA )</a></li>
             </ul>
-        </div>
-        <div class="photo">
-            <img src="cami.jpg" alt="Description of the photo">
         </div>
     </div>
 </body>
